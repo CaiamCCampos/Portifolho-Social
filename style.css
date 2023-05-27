@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@keyframes fadein {  
+    from {opacity: 0} 
+    to {opacity: 1} 
+   }
+  
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+#conteudo{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background: brown url(imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+#auxiframe{
+    width: 311px;
+    height: 627px;
+    background:  url(imagens/frame-iphone.png) no-repeat top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    
+    
+
+}
+iframe{
+    background-image: url();
+    height: 471px;
+    width: 267px;
+   background-color: white;
+    position: absolute;
+    transform: translateY(20px);
+    position: relative;
+    top: -17.5px;
+   
+    
+
+}
+#redes-sociais{
+    position: absolute;
+    right: 0%;
+    width: 100px;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: center;
+   overflow-x: hidden;
+   padding-top: 10px;
+   padding-right: 10px;
+
+}
+a{
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    margin-bottom: 20px;
+    
+
+}
+img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    
+    
+
+}
+img:hover{
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.603);
+    transform: translateX(-2px);
+    transition: transform 0.3s;
+
+}
+
+
+
+#check[type="checkbox"]:checked ~a{
+    transform: translateX(-0px);
+    animation: fadein 4s linear;
+    transition: transform 2s;
+    
+}
+label{
+    
+    width: 50px;
+    height: 50px;
+    
+    display: none;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+input{
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    a{
+        
+        transform: translateX(100px);   
+    }
+    label{
+        display: block;
+        
+    }
+    
+}
+@media screen and (max-width: 627px) {
+    #auxiframe{
+        height: 420px;
+    }
+    iframe {
+        height: 316px;
+        width: 186px;
+        top: -19px;
+    }
+    #redes-sociais{
+        padding-right: 5px;
+    }
+}
+

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@keyframes gradient {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+ }
+:root{
+    --insta: linear-gradient(
+         45deg ,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+::-webkit-scrollbar{ 
+    width: 0px;
+    height: 0px;
+    
+}
+img{
+    width: 100%;
+    height: max-content;
+}
+
+#tela{
+
+    width: 100%;
+    height: max-content;
+    
+}
+a{
+    width: 96%;
+    
+    background-color: lightgray;
+    margin-bottom: 2px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+
+}
+#insta:hover{
+    
+    background-image: var(--insta);
+    background-size: 500% 500% ;
+    border-radius: 50px;
+    animation: gradient 4s infinite alternate ; 
+   
+}
+#linkedin:hover{
+    border: solid 2px rgb(6, 3, 143);
+    background-color: rgb(23, 23, 243);
+    transition: border 2s linear;
+    transition: background 2s linear ;
+}
+#face:hover{
+    border: solid 2px rgb(6, 3, 143);
+    background-color: rgb(23, 23, 243);
+    transition: border 2s linear;
+    transition: background 2s linear ;
+}
+#github:hover{
+    border: solid 2px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    transition: border 2s linear;
+    transition: background 2s linear ;
+}
