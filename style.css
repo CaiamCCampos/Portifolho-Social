@@ -35,14 +35,14 @@ body{
 
 }
 iframe{
-    background-image: url();
-    height: 471px;
+    
+    height: 472px;
     width: 267px;
    background-color: white;
     position: absolute;
     transform: translateY(20px);
     position: relative;
-    top: -17.5px;
+    
    
     
 
@@ -88,8 +88,6 @@ img:hover{
     transition: transform 0.3s;
 
 }
-
-
 
 #check[type="checkbox"]:checked ~a{
     transform: translateX(-0px);

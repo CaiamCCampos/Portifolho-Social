@@ -16,6 +16,18 @@
         #9b36b7 85%,
         #515ecf
     );
+    --face: linear-gradient(
+         45deg ,
+        #ffffff,
+        #4341dd,
+        #141286 
+    );
+    --github: linear-gradient(
+         45deg ,
+        #ffffff,
+        rgb(32, 32, 32),
+        black 
+    );
 }
 body{
     margin: 0px;
@@ -44,7 +56,6 @@ img{
 }
 a{
     width: 96%;
-    
     background-color: lightgray;
     margin-bottom: 2px;
     border-radius: 50px;
@@ -57,29 +68,34 @@ a{
     padding: 10px;
 
 }
-#insta:hover{
+a:hover{
     
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.603);
+    transform: translateY(-2px);
+    transition: transform 0.3s;
+}
+#insta{
     background-image: var(--insta);
     background-size: 500% 500% ;
     border-radius: 50px;
     animation: gradient 4s infinite alternate ; 
    
 }
-#linkedin:hover{
-    border: solid 2px rgb(6, 3, 143);
-    background-color: rgb(23, 23, 243);
-    transition: border 2s linear;
-    transition: background 2s linear ;
+#linkedin{
+    background-image: var(--face);
+    background-size: 500% 500% ;
+    border-radius: 50px;
+    animation: gradient 4s infinite alternate ;
 }
-#face:hover{
-    border: solid 2px rgb(6, 3, 143);
-    background-color: rgb(23, 23, 243);
-    transition: border 2s linear;
-    transition: background 2s linear ;
+#face{
+    background-image: var(--face);
+    background-size: 500% 500% ;
+    border-radius: 50px;
+    animation: gradient 4s infinite alternate ; 
 }
-#github:hover{
-    border: solid 2px rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-    transition: border 2s linear;
-    transition: background 2s linear ;
+#github{
+    background-image: var(--github);
+    background-size: 500% 500% ;
+    border-radius: 50px;
+    animation: gradient 4s infinite alternate ; 
 }
